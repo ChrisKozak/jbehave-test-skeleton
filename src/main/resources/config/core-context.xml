@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans classpath:config/spring-beans-3.0.xsd
+                  http://www.springframework.org/schema/context classpath:config/spring-context-3.0.xsd">
+
+    <context:component-scan base-package="com.thoughtworks">
+        <context:exclude-filter type="regex" expression="com\.thoughtworks\.core\.web.*"/>
+    </context:component-scan>
+
+    <bean id="coreConfig" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="location" value="classpath:/config/core-config.properties"/>
+    </bean>
+</beans>

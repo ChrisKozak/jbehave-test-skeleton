@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/dotcom/!svn/ver/17023/test-service/trunk/TestAutomationCore/src/test/resources/stories/test
+END
+verify_list_is_working.story
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/dotcom/!svn/ver/13300/test-service/trunk/TestAutomationCore/src/test/resources/stories/test/verify_list_is_working.story
+END
+test.story
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/dotcom/!svn/ver/17023/test-service/trunk/TestAutomationCore/src/test/resources/stories/test/test.story
+END
