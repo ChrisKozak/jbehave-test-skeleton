@@ -108,7 +108,7 @@ public abstract class GlobalStories extends JUnitStories {
         configuration.storyReporterBuilder().formats().remove(org.jbehave.core.reporters.Format.STATS);
         configuration.storyReporterBuilder().withFormats(customStats(), new CustomCrossReferenceFormat(xRefStoryReporter));
         configuration.storyReporterBuilder().withCrossReference(customCrossReference);
-        configuration.useStepMonitor(createStepMonitor(customCrossReference));
+//        configuration.useStepMonitor(createStepMonitor(customCrossReference));
 
         return configuration;
     }
