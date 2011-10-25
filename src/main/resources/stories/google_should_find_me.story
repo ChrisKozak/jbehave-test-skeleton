@@ -1,5 +1,6 @@
 Meta:
-@Feature Cart
+@Feature Search
+
 Scenario: Google should search find my profile
 
 Given I am visiting the Googles
