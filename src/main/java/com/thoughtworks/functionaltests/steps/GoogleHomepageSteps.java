@@ -1,5 +1,6 @@
 package com.thoughtworks.functionaltests.steps;
 
+import com.thoughtworks.core.utils.GlobalClipboard;
 import com.thoughtworks.core.web.Browser;
 import com.thoughtworks.functionaltests.pages.GoogleHomepage;
 import com.thoughtworks.functionaltests.pages.GoogleSearchResultsPage;
@@ -20,6 +21,8 @@ public class GoogleHomepageSteps {
     private Browser browser;
     @Autowired
     private GoogleSearchResultsPage googleSearchResultsPage;
+    @Autowired
+    private GlobalClipboard globalClipboard;
 
 
     @Given("I am visiting the Googles")
@@ -30,6 +33,7 @@ public class GoogleHomepageSteps {
     @When("I search for '$searchTerm'")
     public void searchFor(String searchTerm){
         googleHomepage.searchFor(searchTerm);
+        globalClipboard.rememberLastSearchTerm(searchTerm);
     }
 
     @Then("I should see my profile")

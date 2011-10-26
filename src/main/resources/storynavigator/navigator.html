@@ -97,58 +97,6 @@
 
                     <div id="searchCriteria">
                         <fieldset>
-                            <p>
-                            <label>Cross-Cuts</label>
-
-                            <select name="search.crosscut.one" class="filterInput metaSearch">
-                                    <option selected="selected" value="=">- Show All -</option>
-                                    <option value="Iteration=8_10_2011">Iteration 8_10_2011</option>
-                                    <option value="Gaming=">Gaming</option>
-                                    <option value="FSDI=">FSDI</option>
-                                    <option value="MarketPlace=">Market Place</option>
-                                    <option value="Release=BrowseWidening">Browse Widening</option>
-                                    <option value="Release=Retained">Retained</option>
-                                    <option value="StableRegression=">Stable Regression</option>
-                                    <option value="KnownIssue=">KnownIssue</option>
-                                    <option ng:repeat="feature in data.xref.metaTags.$filter('Feature=')" value="{{feature}}">{{feature}}</option>
-                                </select>
-
-                            </p>
-                            <p>
-                            <label></label>
-                            <select name="search.crosscut.two" class="filterInput metaSearch">
-                                    <option selected="selected" value="=">-</option>
-                                    <option value="Iteration=8_10_2011">Iteration 8_10_2011</option>
-                                    <option value="Gaming=">Gaming</option>
-                                    <option value="FSDI=">FSDI</option>
-                                    <option value="MarketPlace=">Market Place</option>
-                                    <option value="Release=BrowseWidening">Browse Widening</option>
-                                    <option value="Release=Retained">Retained</option>
-                                    <option value="StableRegression=">Stable Regression</option>
-                                    <option value="KnownIssue=">KnownIssue</option>
-                                    <option ng:repeat="feature in data.xref.metaTags.$filter('Feature=')" value="{{feature}}">{{feature}}</option>
-
-                                </select>
-                            </p>
-                            <p>
-                            <label></label>
-                            <select name="search.crosscut.three" class="filterInput metaSearch">
-                                    <option selected="selected" value="=">-</option>
-                                    <option value="Iteration=8_10_2011">Iteration 8_10_2011</option>
-                                    <option value="Gaming=">Gaming</option>
-                                    <option value="FSDI=">FSDI</option>
-                                    <option value="MarketPlace=">Market Place</option>
-                                    <option value="Release=BrowseWidening">Browse Widening</option>
-                                    <option value="Release=Retained">Retained</option>
-                                    <option value="StableRegression=">Stable Regression</option>
-                                    <option value="KnownIssue=">KnownIssue</option>
-                                    <option ng:repeat="feature in data.xref.metaTags.$filter('Feature=')" value="{{feature}}">{{feature}}</option>
-
-                                </select>
-                            </p>
-                        </fieldset>
-
-                        <fieldset>
                             <label>Pass / Fail</label>
 
                             <select ng:init="search.passed=''" name="search.passed" class="filterInput">

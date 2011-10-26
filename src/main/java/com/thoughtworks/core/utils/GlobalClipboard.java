@@ -7,9 +7,14 @@ import static com.thoughtworks.core.utils.ReflectionTargetedToStringBuilder.refl
 
 @Component
 public class GlobalClipboard {
+    private String searchTerm;
+
     @Override
     public String toString() {
         return reflectionTargetedToString(this, SHORT_PREFIX_MULTI_LINE_STYLE);
     }
 
+    public void rememberLastSearchTerm(String searchTerm) {
+        this.searchTerm = searchTerm;
+    }
 }

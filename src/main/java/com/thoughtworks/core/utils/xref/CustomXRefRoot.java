@@ -26,7 +26,7 @@ public class CustomXRefRoot extends CrossReference.XRefRoot {
 
     @Override
     protected String createdBy() {
-        return "FTA";
+        return "Arbitrary Testing Team";
     }
 
     protected CrossReference.XRefStory createXRefStory(StoryReporterBuilder storyReporterBuilder, Story story, boolean passed) {
