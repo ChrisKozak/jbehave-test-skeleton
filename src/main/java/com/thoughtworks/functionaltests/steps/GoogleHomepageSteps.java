@@ -20,8 +20,6 @@ public class GoogleHomepageSteps {
     @Autowired
     private Browser browser;
     @Autowired
-    private GoogleSearchResultsPage googleSearchResultsPage;
-    @Autowired
     private GlobalClipboard globalClipboard;
 
 
@@ -34,10 +32,5 @@ public class GoogleHomepageSteps {
     public void searchFor(String searchTerm){
         googleHomepage.searchFor(searchTerm);
         globalClipboard.rememberLastSearchTerm(searchTerm);
-    }
-
-    @Then("I should see my profile")
-    public void verifyChrisKozakProfileIsListed(){
-        assertThat(googleSearchResultsPage.allSearchResults(), hasItem("Chris Kozak - Google Profile"));
     }
 }
